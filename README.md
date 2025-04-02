@@ -1,5 +1,84 @@
 # 101412099LabTest2Comp3133
+# SpaceX Missions Tracker
 
+## Overview
+The SpaceX Missions Tracker is an Angular-based web application that allows users to view and filter past and upcoming SpaceX missions. It fetches data from the SpaceX API and provides a user-friendly interface to explore mission details.
+
+## Features
+- **Mission List:** Displays a list of SpaceX missions.
+- **Mission Details:** Shows detailed information about a selected mission.
+- **Filtering:** Allows users to filter missions based on launch year, success status, and other criteria.
+- **Responsive UI:** Works on different screen sizes.
+- **Standalone Components:** Utilizes Angular standalone components for a modular architecture.
+
+## Technologies Used
+- **Angular** (Latest Version)
+- **TypeScript**
+- **RxJS for API Calls**
+- **Bootstrap for Styling**
+- **SpaceX API** for fetching mission data
+
+## Installation
+### Prerequisites
+Ensure you have the following installed:
+- Node.js (Latest LTS version recommended)
+- Angular CLI
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd 101412099-lab-test2-comp3133
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the application:
+   ```bash
+   ng serve
+   ```
+   The app should now be running at `http://localhost:4200/`.
+
+## File Structure
+```
+/src/app
+  ├── components/
+  │   ├── missionlist/  # Mission list component
+  │   ├── missiondetails/  # Mission details component
+  ├── services/
+  │   ├── spacex.service.ts  # Service for fetching SpaceX data
+  ├── app.module.ts
+  ├── app.component.ts
+  ├── app.routes.ts
+```
+
+## Common Issues & Fixes
+### 1. Standalone Component Import Issues
+If you encounter an error like:
+```
+Component imports must be standalone components, directives, pipes, or must be NgModules.
+```
+Fix: Ensure that your `app.module.ts` is properly importing standalone components.
+
+### 2. Cannot Find Module Error
+If you see an error like:
+```
+Cannot find module './app/app.component' or its corresponding type declarations.ts(2307)
+```
+Fix: Check that the file paths are correct and update imports in `app.module.ts` accordingly.
+
+### 3. Injection Token Error
+```
+No suitable injection token for parameter 'spacexService'
+```
+Fix: Ensure the service is provided using:
+```ts
+@Injectable({ providedIn: 'root' })
+```
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
 
 ## Development server
