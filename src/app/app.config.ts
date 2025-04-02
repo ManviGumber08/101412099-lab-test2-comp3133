@@ -1,9 +1,7 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
-import { provideRouter } from '@angular/router';
+// app.routes.ts
+import { Routes } from '@angular/router';
+import { MissiondetailsComponent } from './components/missiondetails/missiondetails.component';
 
-import { routes } from './app.routes';
-import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
-
-export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(withEventReplay())]
-};
+export const routes: Routes = [
+  { path: 'mission/:id', component: MissiondetailsComponent }
+];
