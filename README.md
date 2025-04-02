@@ -6,7 +6,8 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 To start a local development server, run:
 
-```bash
+```bash![Screenshot 2025-04-02 172713](https://github.com/user-attachments/assets/62a981b3-6fe4-4f5e-adf9-058e9a39a9f3)
+
 ng serve
 ```
 
@@ -39,8 +40,11 @@ This will compile your project and store the build artifacts in the `dist/` dire
 ## Running unit tests
 
 To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+![Screenshot 2025-04-02 172656](https://github.com/user-attachments/assets/05b4f7ab-efb9-4d81-b9e6-442465dafb97)
+![Screenshot 2025-04-02 111435](https://github.com/user-attachments/assets/40c71abd-0b9a-49d3-832f-406c09639a11)
 
-```bash
+```bash![Screenshot 2025-04-02 172636](https://github.com/user-attachments/assets/91d11180-c110-4172-af06-2750f655b6ea)
+
 ng test
 ```
 
