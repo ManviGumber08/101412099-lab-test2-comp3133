@@ -5,8 +5,10 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 ## Development server
 
 To start a local development server, run:
+![Screenshot 2025-04-02 172636](https://github.com/user-attachments/assets/786b78d5-f9c9-434f-93af-807306c50b4e)
 
-```bash![Screenshot 2025-04-02 172713](https://github.com/user-attachments/assets/62a981b3-6fe4-4f5e-adf9-058e9a39a9f3)
+```bash![Screenshot 2025-04-02 172713](https://github.com/user-attachments/assets/62a981b3-6fe4-4f5e-adf9-058e9a39a9f3)![Screenshot 2025-04-02 172713](https://github.com/user-attachments/assets/39206ce6-f51e-4589-b4b2-372c31ae4aa1)
+
 
 ng serve
 ```
